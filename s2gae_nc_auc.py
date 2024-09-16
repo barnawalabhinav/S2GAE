@@ -183,7 +183,7 @@ def main():
     device = f'cuda:{args.device}' if torch.cuda.is_available() else 'cpu'
     device = torch.device(device)
 
-    path = osp.join('dataset/class')
+    path = osp.join('dataset/node-class')
 
     # edge_index = data.edge_index
 
@@ -201,7 +201,7 @@ def main():
         else:
             data = dataset[0]
     elif args.dataset == 'proteins':
-        dataset = PygNodePropPredDataset(
+        dataset = PygNodePropPredDataset(root=path, 
             name=f'ogbn-{args.dataset}', transform=T.ToSparseTensor(attr='edge_attr'))
         data = dataset[0]
         # Move edge features to node features.

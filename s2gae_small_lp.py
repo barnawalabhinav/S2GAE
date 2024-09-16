@@ -160,12 +160,15 @@ def main():
     device = f'cuda:{args.device}' if torch.cuda.is_available() else 'cpu'
     device = torch.device(device)
 
+    path = os.path.join('dataset/link-pred')
+
     if args.dataset in ['Cora', 'CiteSeer', 'PubMed']:
-        path = osp.join('dataset', args.dataset)
+        # path = osp.join(path, args.dataset)
         dataset = Planetoid(path, args.dataset)
         data = dataset[0]
     else:
-        data = load_social_graphs(args.dataset)
+        path = osp.join(path, args.dataset)
+        data = load_social_graphs(path)
     split_edge = do_edge_split_direct(data)
 
     data.edge_index = to_undirected(split_edge['train']['edge'].t())

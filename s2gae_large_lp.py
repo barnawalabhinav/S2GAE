@@ -167,19 +167,21 @@ def main():
     device = f'cuda:{args.device}' if torch.cuda.is_available() else 'cpu'
     device = torch.device(device)
 
+    path = os.path.join('dataset/link-pred')
+
     if args.dataset == 'ogbl-ddi':
-        dataset = PygLinkPropPredDataset(name='ogbl-ddi',
+        dataset = PygLinkPropPredDataset(root=path, name='ogbl-ddi',
                                          transform=T.ToSparseTensor())
         data = dataset[0]
         num_nodes = data.num_nodes
     elif args.dataset == 'ogbl-collab':
-        dataset = PygLinkPropPredDataset(name='ogbl-collab')
+        dataset = PygLinkPropPredDataset(root=path, name='ogbl-collab')
         data = dataset[0]
         data.edge_weight = data.edge_weight.view(-1).to(torch.float)
         data = T.ToSparseTensor()(data)
         num_nodes = data.x.shape[0]
     else:
-        dataset = PygLinkPropPredDataset(name='ogbl-ppa',
+        dataset = PygLinkPropPredDataset(root=path, name='ogbl-ppa',
                                          transform=T.ToSparseTensor())
 
         data = dataset[0]

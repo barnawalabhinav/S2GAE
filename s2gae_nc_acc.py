@@ -181,7 +181,7 @@ def main():
     device = f'cuda:{args.device}' if torch.cuda.is_available() else 'cpu'
     device = torch.device(device)
 
-    path = osp.join('dataset/class')
+    path = osp.join('dataset/node-class')
 
     # edge_index = data.edge_index
 

@@ -380,8 +380,8 @@ def do_edge_split_nc(edge_index, num_nodes, val_ratio=0.05, test_ratio=0.1):
     # Return upper triangular portion.
     mask = row < col
     row, col = row[mask], col[mask]
-    n_v = int(math.floor(val_ratio * row.size(0)))
-    n_t = int(math.floor(test_ratio * row.size(0)))
+    n_v = int(math.ceil(val_ratio * row.size(0)))
+    n_t = int(math.ceil(test_ratio * row.size(0)))
     # Positive edges.
     perm = torch.randperm(row.size(0))
     row, col = row[perm], col[perm]

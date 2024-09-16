@@ -1,2 +1,5 @@
 dataset*
 logs*
+weight*
+*pycache*
+test.py
