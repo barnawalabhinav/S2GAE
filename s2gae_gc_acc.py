@@ -4,7 +4,6 @@ import torch
 from torch.utils.data import DataLoader
 from torch_geometric.loader import DataLoader as pygDataLoader
 import numpy as np
-from ogb.nodeproppred import PygNodePropPredDataset
 from torch_geometric.datasets import TUDataset
 import time
 from torch_geometric.data import Data
