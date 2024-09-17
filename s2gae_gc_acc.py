@@ -20,7 +20,7 @@ from sklearn.model_selection import KFold
 from sklearn import svm
 from sklearn.metrics import f1_score
 import os.path as osp
-from torch_geometric.nn import global_mean_pool, global_add_pool, global_max_pool
+from torch_geometric.nn import Node2Vec, global_mean_pool, global_add_pool, global_max_pool
 
 
 def random_edge_mask(args, edge_index, device, num_nodes):
@@ -205,6 +205,10 @@ def main():
     for data_ in data_loader:
         data = data_
 
+    if data.x is None:
+        model = Node2Vec(data.edge_index, embedding_dim=64, walk_length=20, context_size=10, walks_per_node=10)
+        data.x = model.forward()
+    
     if data.is_undirected():
         edge_index = data.edge_index
     else:
