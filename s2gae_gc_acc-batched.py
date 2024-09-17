@@ -20,7 +20,6 @@ from sklearn.model_selection import KFold
 from sklearn import svm
 from sklearn.metrics import f1_score
 import os.path as osp
-from torch_geometric.nn import global_mean_pool, global_add_pool, global_max_pool
 
 
 def random_edge_mask(args, edge_index, device, num_nodes):
@@ -94,30 +93,37 @@ def test(model, predictor, data, pos_test_edge, neg_test_edge, batch_size):
     for perm in DataLoader(range(pos_test_edge.size(0)), batch_size):
         edge = pos_test_edge[perm].t()
         pos_test_preds += [predictor(h, edge).squeeze().cpu()]
-    # if len(pos_test_preds[0].shape) == 0:
-    #     pos_test_pred = pos_test_preds[0].unsqueeze(0)
-    # else:
-    pos_test_pred = torch.cat(pos_test_preds, dim=0)
+    if len(pos_test_preds[0].shape) == 0:
+        pos_test_pred = pos_test_preds[0].unsqueeze(0)
+    else:
+        pos_test_pred = torch.cat(pos_test_preds, dim=0)
+
+    # print(pos_test_pred)
 
     neg_test_preds = []
     for perm in DataLoader(range(neg_test_edge.size(0)), batch_size):
         edge = neg_test_edge[perm].t()
         neg_test_preds += [predictor(h, edge).squeeze().cpu()]
-    # if len(neg_test_preds[0].shape) == 0:
-    #     neg_test_pred = neg_test_preds[0].unsqueeze(0)
-    # else:
-    neg_test_pred = torch.cat(neg_test_preds, dim=0)
+    if len(neg_test_preds[0].shape) == 0:
+        neg_test_pred = neg_test_preds[0].unsqueeze(0)
+    else:
+        neg_test_pred = torch.cat(neg_test_preds, dim=0)
+
+    # print(neg_test_pred)
 
     test_pred = torch.cat([pos_test_pred, neg_test_pred], dim=0)
     test_true = torch.cat([torch.ones_like(pos_test_pred), torch.zeros_like(neg_test_pred)], dim=0)
     test_auc = roc_auc_score(test_true, test_pred)
-    return test_auc
+    return test_auc, test_pred, test_true
 
 
 def extract_feature_list_layer2(feature_list):
     xx_list = []
-    xx_list.append(feature_list[-1])
-    tmp_feat = torch.cat(feature_list, dim=-1)
+    # We could also do torch.mean
+    feat_pool = torch.stack([torch.stack([torch.sum(feature, dim=0) for feature in graph_feat]) for graph_feat in feature_list])
+    feat_pool = feat_pool.transpose(0, 1)
+    xx_list.append(feat_pool[-1])
+    tmp_feat = torch.cat(feat_pool.chunk(feat_pool.shape[0], dim=0), dim=2).squeeze(0)
     xx_list.append(tmp_feat)
     return xx_list
 
@@ -200,22 +206,6 @@ def main():
     else:
         raise ValueError(args.dataset)
 
-    data_loader = pygDataLoader(dataset, batch_size=len(dataset), shuffle=False)
-    data = None
-    for data_ in data_loader:
-        data = data_
-
-    if data.is_undirected():
-        edge_index = data.edge_index
-    else:
-        print('### Input graph {} is directed'.format(args.dataset))
-        edge_index = to_undirected(data.edge_index)
-    data.full_adj_t = SparseTensor.from_edge_index(edge_index).t()
-
-    edge_index, test_edge, test_edge_neg = do_edge_split_nc(edge_index, data.x.shape[0])
-
-    labels = data.y.view(-1)
-
     save_path_model = 'weight/s2gaesvm-' + args.use_sage + '_{}_{}'.format(args.dataset, args.mask_type) + '_{}'.format(
         args.num_layers) + '_hidd{}-{}-{}-{}'.format(args.hidden_channels, args.mask_ratio, args.decode_layers,
                                                      args.decode_channels) + '_model.pth'
@@ -224,32 +214,47 @@ def main():
         args.num_layers) + '_hidd{}-{}-{}-{}'.format(args.hidden_channels, args.mask_ratio, args.decode_layers,
                                                      args.decode_channels) + '_pred.pth'
 
+    data_loader = pygDataLoader(dataset, batch_size=len(dataset), shuffle=True)
+
+    edge_splits = []
+    edge_indices = []
+
+    if dataset[0].is_undirected():
+        for i, data in enumerate(data_loader):
+            edge_indices.append(data.edge_index)
+    else:
+        print('### Input graph {} is directed'.format(args.dataset))
+        for i, data in enumerate(data_loader):
+            edge_indices.append(to_undirected(data.edge_index))
+
+    for i, data in enumerate(data_loader):
+        edge_index = edge_indices[i]
+        edge_splits.append(do_edge_split_nc(edge_index, data.x.shape[0]))
+
+    print('Start training with mask ratio={} # optimization edges={} / {}'.format(args.mask_ratio,
+                                                                            int(args.mask_ratio *
+                                                                                edge_splits[0][0].shape[0]), edge_splits[0][0].shape[0]))
+
     out2_dict = {0: 'last', 1: 'combine'}
     result_dict = out2_dict
     svm_result_final = np.zeros(shape=[args.runs, len(out2_dict)])
     # Use training + validation edges for inference on test set.
 
-    data = data.to(device)
-
     if args.use_sage == 'SAGE':
-        model = SAGE(data.num_features, args.hidden_channels,
-                     args.hidden_channels, args.num_layers,
-                     args.dropout).to(device)
+        model = SAGE(dataset[0].num_features, args.hidden_channels,
+                    args.hidden_channels, args.num_layers,
+                    args.dropout).to(device)
     elif args.use_sage == 'GIN':
-        model = GIN(data.num_features, args.hidden_channels,
-                     args.hidden_channels, args.num_layers,
-                     args.dropout).to(device)
+        model = GIN(dataset[0].num_features, args.hidden_channels,
+                    args.hidden_channels, args.num_layers,
+                    args.dropout).to(device)
     else:
-        model = GCN(data.num_features, args.hidden_channels,
+        model = GCN(dataset[0].num_features, args.hidden_channels,
                     args.hidden_channels, args.num_layers,
                     args.dropout).to(device)
 
     predictor = LPDecoder(args.hidden_channels, args.decode_channels, 1, args.num_layers,
-                              args.decode_layers, args.dropout).to(device)
-
-    print('Start training with mask ratio={} # optimization edges={} / {}'.format(args.mask_ratio,
-                                                                             int(args.mask_ratio *
-                                                                                 edge_index.shape[0]), edge_index.shape[0]))
+                                args.decode_layers, args.dropout).to(device)
 
     for run in range(args.runs):
         model.reset_parameters()
@@ -262,12 +267,23 @@ def main():
         best_epoch = 0
         cnt_wait = 0
         for epoch in range(1, 1 + args.epochs):
-            t1 = time.time()
-            loss = train(model, predictor, data, edge_index, optimizer,
-                         args)
-            t2 = time.time()
-            auc_test = test(model, predictor, data, test_edge, test_edge_neg,
-                           args.batch_size)
+            test_pred = []
+            test_true = []
+            for i, data in enumerate(data_loader):
+                edge_index, test_edge, test_edge_neg = edge_splits[i]
+                data.full_adj_t = SparseTensor.from_edge_index(data.edge_index).t()
+                data = data.to(device)
+
+                t1 = time.time()
+                loss = train(model, predictor, data, edge_index, optimizer, args)
+                t2 = time.time()
+                auc_test_local, test_pred_local, test_true_local = test(model, predictor, data, test_edge, test_edge_neg, args.batch_size)
+                test_pred.append(test_pred_local)
+                test_true.append(test_true_local)
+            
+            test_true = torch.cat(test_true, dim=0)
+            test_pred = torch.cat(test_pred, dim=0)
+            auc_test = roc_auc_score(test_true, test_pred)
 
             if auc_test > best_valid:
                 best_valid = auc_test
@@ -292,10 +308,18 @@ def main():
 
         model.load_state_dict(torch.load(save_path_model))
         predictor.load_state_dict(torch.load(save_path_predictor))
-        feature = model(data.x, data.full_adj_t)
-        feature = [global_add_pool(feature_, data.batch).detach() for feature_ in feature]
 
-        feature_list = extract_feature_list_layer2(feature)
+        node_features = []
+        labels = []
+        for i, data in enumerate(dataset):
+            labels.append(data.y.view(-1).squeeze(0))
+            data.full_adj_t = SparseTensor.from_edge_index(data.edge_index).t()
+            data = data.to(device)
+            feature = model(data.x, data.full_adj_t)
+            feature = [feature_.detach() for feature_ in feature]
+            node_features.append(feature)
+
+        feature_list = extract_feature_list_layer2(node_features)
 
         for i, feature_tmp in enumerate(feature_list):
             f1_mic_svm, f1_mac_svm, acc_svm = test_classify(feature_tmp.data.cpu().numpy(), np.array(labels), args)
