@@ -1643,9 +1643,9 @@ class AutoLink_l3scale(torch.nn.Module):
         elif self.gnn_type == 'GCN':
             for i in range(num_layers):
                 if i == 0:
-                    self.convs.append(GCNConv_layer(in_channels, hidden_channels))
+                    self.convs.append(GCNConv(in_channels, hidden_channels))
                 else:
-                    self.convs.append(GCNConv_layer(hidden_channels, hidden_channels))
+                    self.convs.append(GCNConv(hidden_channels, hidden_channels))
         else:
             raise SystemExit('The gnn type should be GCN or SAGE')
 

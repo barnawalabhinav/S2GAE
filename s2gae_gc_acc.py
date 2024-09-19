@@ -17,9 +17,32 @@ from sklearn.metrics import roc_auc_score
 from utils import edgemask_um, edgemask_dm, do_edge_split_nc
 from sklearn.model_selection import KFold
 from sklearn import svm
+from sklearn.model_selection import StratifiedKFold, GridSearchCV
 from sklearn.metrics import f1_score
 import os.path as osp
 from torch_geometric.nn import Node2Vec, global_mean_pool, global_add_pool, global_max_pool
+
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '0' 
+
+
+class SelfAttentionPool(torch.nn.Module):
+    def __init__(self, in_channels, device):
+        super(SelfAttentionPool, self).__init__()
+        self.attention = torch.nn.Linear(in_channels, 1).to(device)  # Attention layer
+
+    def forward(self, x, batch):
+        # Compute attention scores
+        attn_scores = self.attention(x)  # Shape: (num_nodes, 1)
+        attn_scores = torch.softmax(attn_scores, dim=0)  # Normalize scores
+
+        # Multiply node features by attention scores
+        weighted_features = x * attn_scores
+
+        # Pooling
+        pooled_output = global_add_pool(weighted_features, batch)  # Aggregates by summing
+
+        return pooled_output
 
 
 def random_edge_mask(args, edge_index, device, num_nodes):
@@ -131,10 +154,15 @@ def test_classify(feature, labels, args):
     f1_mac = []
     f1_mic = []
     accs = []
-    kf = KFold(n_splits=5, random_state=42, shuffle=True)
+    # kf = KFold(n_splits=10, shuffle=True, random_state=0)
+    kf = KFold(n_splits=10, shuffle=True, random_state=42)
     for train_index, test_index in kf.split(feature):
         train_X, train_y = feature[train_index], labels[train_index]
         test_X, test_y = feature[test_index], labels[test_index]
+
+        # params = {"C": [1e-3, 1e-2, 1e-1, 1, 10]}
+        # svc = svm.SVC(random_state=42)
+        # clf = GridSearchCV(svc, params)
         clf = svm.SVC(kernel='rbf', decision_function_shape='ovo')
         clf.fit(train_X, train_y)
         preds = clf.predict(test_X)
@@ -162,8 +190,8 @@ def main():
     parser = argparse.ArgumentParser(description='S2-GAE (GNN)')
     parser.add_argument('--device', type=int, default=0)
     parser.add_argument('--log_steps', type=int, default=1)
-    parser.add_argument('--use_sage', type=str, default='GCN')
-    parser.add_argument('--dataset', type=str, default='Cora')
+    parser.add_argument('--use_sage', type=str, default='GIN')
+    parser.add_argument('--dataset', type=str, default='MUTAG')
     parser.add_argument('--use_valedges_as_input', type=bool, default=False)
     parser.add_argument('--num_layers', type=int, default=2)
     parser.add_argument('--decode_layers', type=int, default=3)
@@ -175,12 +203,14 @@ def main():
     parser.add_argument('--epochs', type=int, default=400)
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--eval_steps', type=int, default=1)
-    parser.add_argument('--runs', type=int, default=3)
+    parser.add_argument('--runs', type=int, default=5)
     parser.add_argument('--mask_type', type=str, default='dm',
                         help='dm | um')  # whether to use mask features
     parser.add_argument('--patience', type=int, default=50,
                         help='Use attribute or not')
     parser.add_argument('--mask_ratio', type=float, default=0.8)
+    parser.add_argument('--pooling', type=str, default="add")
+    parser.add_argument('--use_scheduler', type=bool, default=False)
     args = parser.parse_args()
     print(args)
 
@@ -261,6 +291,12 @@ def main():
             list(model.parameters()) + list(predictor.parameters()),
             lr=args.lr)
 
+        if args.use_scheduler:
+            scheduler = lambda epoch :( 1 + np.cos((epoch) * np.pi / args.epochs) ) * 0.5
+            scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=scheduler)
+        else:
+            scheduler = None
+            
         best_valid = 0.0
         best_epoch = 0
         cnt_wait = 0
@@ -269,6 +305,8 @@ def main():
             loss = train(model, predictor, data, edge_index, optimizer,
                          args)
             t2 = time.time()
+            if scheduler is not None:
+                scheduler.step()
             auc_test = test(model, predictor, data, test_edge, test_edge_neg,
                            args.batch_size)
 
@@ -287,7 +325,7 @@ def main():
                   f'Best_valid: {100 * best_valid:.2f}%, '
                   f'Loss: {loss:.4f}, ')
             print('***************')
-            if cnt_wait == 50:
+            if cnt_wait == args.patience:
                 print('Early stop at {}'.format(epoch))
                 break
 
@@ -296,7 +334,18 @@ def main():
         model.load_state_dict(torch.load(save_path_model))
         predictor.load_state_dict(torch.load(save_path_predictor))
         feature = model(data.x, data.full_adj_t)
-        feature = [global_add_pool(feature_, data.batch).detach() for feature_ in feature]
+
+        if args.pooling == "add":
+            pool_func = global_add_pool
+        elif args.pooling == "mean":
+            pool_func = global_mean_pool
+        elif args.pooling == "max":
+            pool_func = global_max_pool
+        else:
+            # pool_func = SelfAttentionPool(args.hidden_channels, device)
+            raise ValueError(args.pooling)
+
+        feature = [pool_func(feature_, data.batch).detach() for feature_ in feature]
 
         feature_list = extract_feature_list_layer2(feature)
 
