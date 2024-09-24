@@ -1,7 +1,7 @@
-MUTAG: --use_sage GIN --dropout 0 --batch_size 2048 --num_layers 3 --decode_layers 4
-PROTEINS: --use_sage GIN --mask_type dm --pooling add --mask_ratio 0.6
-IMDB-BINARY: --use_sage GIN --mask_type dm --pooling add --mask_ratio 0.6
-IMDB-MULTI: --use_sage GIN --mask_type dm --pooling add --mask_ratio 0.6
-COLLAB: --use_sage GIN --mask_type dm --pooling add --mask_ratio 0.6
-REDDIT-BINARY: --use_sage GIN --mask_type dm --pooling add --mask_ratio 0.6
-NCI1: --use_sage GIN --mask_type dm --pooling add --mask_ratio 0.6
+MUTAG: --dropout 0 --batch_size 2048 --num_layers 3 --decode_layers 4
+PROTEINS: --pooling add --mask_ratio 0.6
+IMDB-BINARY: --pooling add --mask_ratio 0.6
+IMDB-MULTI: --pooling max
+COLLAB: --pooling add --mask_ratio 0.6
+REDDIT-BINARY: --pooling add --mask_ratio 0.6
+NCI1: --pooling add --mask_ratio 0.6

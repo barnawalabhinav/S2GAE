@@ -73,18 +73,17 @@ def load_graph_classification_dataset(root, dataset_name, deg4feat=False):
 
     else:
         print("******** Use `attr` as node features ********")
-    feature_dim = int(graph.num_features)
-
-    labels = torch.tensor([x.y for x in dataset])
     
+    feature_dim = int(graph.num_features)
+    labels = torch.tensor([x.y for x in dataset])
     num_classes = torch.max(labels).item() + 1
-    for i, g in enumerate(dataset):
-        dataset[i].edge_index = remove_self_loops(dataset[i].edge_index)[0]
-        dataset[i].edge_index = add_self_loops(dataset[i].edge_index)[0]
+    # for i, g in enumerate(dataset):
+    #     dataset[i].edge_index = remove_self_loops(dataset[i].edge_index)[0]
+    #     dataset[i].edge_index = add_self_loops(dataset[i].edge_index)[0]
     #dataset = [(g, g.y) for g in dataset]
 
     print(f"******** # Num Graphs: {len(dataset)}, # Num Feat: {feature_dim}, # Num Classes: {num_classes} ********")
-    return dataset, (feature_dim, num_classes)
+    return dataset
 
 
 def random_edge_mask(args, edge_index, device, num_nodes):
@@ -253,6 +252,7 @@ def main():
     parser.add_argument('--mask_ratio', type=float, default=0.8)
     parser.add_argument('--pooling', type=str, default="add")
     parser.add_argument('--use_scheduler', type=bool, default=False)
+    parser.add_argument("--deg4feat", type=bool, default=True, help="use node degree as input feature")
     args = parser.parse_args()
     print(args)
 
@@ -267,8 +267,7 @@ def main():
 
     if args.dataset in {'IMDB-BINARY', 'IMDB-MULTI', 'PROTEINS', 'COLLAB', 'MUTAG', 'REDDIT-BINARY', 'NCI1'}:
         # dataset = TUDataset(root=path, name=args.dataset)
-        dataset, (num_features, num_classes) = load_graph_classification_dataset(path, args.dataset, False)
-        args.num_features = num_features
+        dataset = load_graph_classification_dataset(path, args.dataset, args.deg4feat)
         # data = dataset[0]
     else:
         raise ValueError(args.dataset)
