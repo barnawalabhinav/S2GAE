@@ -1,0 +1,2 @@
+mlptoxcast1.txt
+Best Metrics: {'best_train_auc': 0.4716367369235999, 'best_train_acc': 0.826378663485345, 'best_valid_auc': 0.470124701257879, 'best_valid_acc': 0.8014848972651667, 'best_test_auc': 0.488167350662049, 'best_test_acc': 0.8017313115658722}

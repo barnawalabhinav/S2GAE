@@ -1,0 +1,111 @@
+Namespace(batch_size=1024, dataset='zinc250k', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, graph_batch=128, hidden_channels=128, log_steps=1, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, runs=1, seed=42, use_sage='GCN', use_valedges_as_input=False)
+Start training with mask ratio=0.8
+Epoch: 01, Best_epoch: 01, Best_valid: 56.41, Loss: 0.0273, 
+***************
+Epoch: 02, Best_epoch: 02, Best_valid: 67.46, Loss: 0.0019, 
+***************
+Epoch: 03, Best_epoch: 02, Best_valid: 67.46, Loss: 0.0010, 
+***************
+Epoch: 04, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0008, 
+***************
+Epoch: 05, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0006, 
+***************
+Epoch: 06, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0002, 
+***************
+Epoch: 07, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 08, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0002, 
+***************
+Epoch: 09, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0003, 
+***************
+Epoch: 10, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 11, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0002, 
+***************
+Epoch: 12, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 13, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0002, 
+***************
+Epoch: 14, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 15, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 16, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 17, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 18, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 19, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 20, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0002, 
+***************
+Epoch: 21, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 22, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 23, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 24, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0002, 
+***************
+Epoch: 25, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 26, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 27, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 28, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 29, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 30, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 31, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 32, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 33, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 34, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 35, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 36, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 37, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 38, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 39, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 40, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 41, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0002, 
+***************
+Epoch: 42, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 43, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 44, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 45, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 46, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 47, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 48, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 49, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 50, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 51, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 52, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0000, 
+***************
+Epoch: 53, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Epoch: 54, Best_epoch: 04, Best_valid: 74.35, Loss: 0.0001, 
+***************
+Early stop at 54

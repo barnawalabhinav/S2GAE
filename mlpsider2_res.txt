@@ -1,0 +1,2 @@
+mlpsider2.txt
+Best Metrics: {'best_train_auc': 0.7034173986366978, 'best_train_acc': 0.7673580679715649, 'best_valid_auc': 0.5835190523559315, 'best_valid_acc': 0.7770007770007773, 'best_test_auc': 0.6298123297023749, 'best_test_acc': 0.7710437710437711}

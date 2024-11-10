@@ -1,0 +1,2 @@
+mlptox213.txt
+Best Metrics: {'best_train_auc': 0.7811982747972078, 'best_train_acc': 0.930954360103251, 'best_valid_auc': 0.7116173348467386, 'best_valid_acc': 0.9002652161408342, 'best_test_auc': 0.7040631919520214, 'best_test_acc': 0.8977083005489942}

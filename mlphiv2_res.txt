@@ -1,0 +1,2 @@
+mlphiv2.txt
+Best Metrics: {'best_train_auc': 0.7334029744766586, 'best_train_acc': 0.9641348287286101, 'best_valid_auc': 0.7708455810307663, 'best_valid_acc': 0.9815220034038414, 'best_test_auc': 0.6906834817203886, 'best_test_acc': 0.9674203744225626}

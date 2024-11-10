@@ -1,0 +1,132 @@
+Training From Scratch
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molbbbp.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth', runs=3, sample_weights=True, scratch=True, seed=42, svm=False, use_sage='GCN', use_valedges_as_input=False)
+Parameter containing:
+tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0', requires_grad=True)
+Parameter containing:
+tensor([[ 0.0559, -0.0814, -0.0988,  ..., -0.1915, -0.0479,  0.0469],
+        [-0.1961,  0.0849, -0.0536,  ...,  0.1258,  0.1988,  0.0250],
+        [ 0.0337, -0.0624, -0.1129,  ..., -0.0115,  0.1848, -0.1561],
+        ...,
+        [ 0.1302, -0.0309,  0.0887,  ..., -0.0438,  0.0779, -0.1089],
+        [-0.0975, -0.2005,  0.0179,  ..., -0.1327, -0.1444,  0.0325],
+        [ 0.1908, -0.0600, -0.1673,  ...,  0.1162,  0.0683,  0.0836]],
+       device='cuda:0', requires_grad=True)
+Parameter containing:
+tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0', requires_grad=True)
+Parameter containing:
+tensor([[-0.1462,  0.1209,  0.0102,  ..., -0.0704,  0.0911,  0.0206],
+        [-0.1333, -0.0827, -0.1028,  ...,  0.0244, -0.0654,  0.1004],
+        [-0.1236,  0.0443,  0.0004,  ...,  0.0107, -0.0039,  0.0053],
+        ...,
+        [-0.1214, -0.0920,  0.0021,  ...,  0.1022,  0.0147,  0.0352],
+        [-0.0813,  0.1016,  0.0112,  ...,  0.0476,  0.0951,  0.1491],
+        [ 0.0490,  0.0564,  0.1096,  ..., -0.0557,  0.1098, -0.0747]],
+       device='cuda:0', requires_grad=True)
+22.9956975877285
+Training From Scratch
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molbbbp.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth', runs=3, sample_weights=True, scratch=True, seed=42, svm=False, use_sage='GCN', use_valedges_as_input=False)
+23.331757724285126
+torch.Size([1631])
+Training From Scratch
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molbbbp.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth', runs=3, sample_weights=True, scratch=True, seed=42, svm=False, use_sage='GCN', use_valedges_as_input=False)
+22.789813295006752
+torch.Size([1631])
+Training From Scratch
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molclintox.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth', runs=3, sample_weights=True, scratch=True, seed=42, svm=False, use_sage='GCN', use_valedges_as_input=False)
+11.244278743863106
+2
+2
+2
+0.6047135681533755 0.7849625726386289 0.4855385257011782
+9.609545841813087
+2
+2
+2
+0.6394270486717144 0.7795684362585771 0.5107592187119869
+9.742874801158905
+2
+2
+2
+0.6617781815965378 0.7722134672838898 0.5231006499148507
+9.599950052797794
+2
+2
+2
+0.6853646284588373 0.7511605765126892 0.5352552740416363
+9.508334398269653
+2
+2
+2
+0.6908331986108146 0.7426072753537543 0.5425876689952387
+9.583076778799295
+2
+2
+2
+0.6971823831602607 0.7334671197347253 0.550132937128558
+9.54820691794157
+2
+2
+2
+0.6993207892280584 0.7280729833546735 0.5547796545372398
+9.648491233587265
+2
+2
+2
+0.7019564914279854 0.7210553530976066 0.5592022034546276
+9.619716797024012
+2
+2
+2
+0.7037822823930486 0.7163851406809154 0.559276926285059
+9.578856267035007
+2
+2
+2
+0.7035651633203163 0.717084441380216 0.5588772460292636
+9.53384743630886
+2
+2
+2
+0.7040953945303181 0.7175588496011032 0.5589146074444792
+9.621741700917482
+2
+2
+2
+0.7049222180192285 0.7105412193440362 0.5615629235741841
+9.480116821825504
+2
+2
+2
+0.704849114703014 0.7037484815653829 0.5607262016473777
+9.482235476374626
+2
+2
+2
+0.704928712167824 0.7100668111231492 0.5622875612553435
+9.402286902070045
+2
+2
+2
+0.7048124845657697 0.7078564627860403 0.5633745177770827
+9.507651772350073
+2
+2
+2
+0.7051404488797364 0.7105412193440362 0.5606514788169465
+9.457009255886078
+2
+2
+2
+0.7061561258721648 0.7030491808660824 0.559601883710423
+Pre-trained model loaded
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molclintox.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth', runs=3, sample_weights=True, scratch=False, seed=42, svm=False, use_sage='GCN', use_valedges_as_input=False)

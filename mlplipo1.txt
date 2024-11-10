@@ -1,0 +1,3003 @@
+Pre-trained model loaded
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-mollipo.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='add', pretrained_path='weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth', runs=3, scratch=False, seed=42, svm=False, use_sage='GCN', use_valedges_as_input=False)
+223.46471226215363
+EPOCH:  0
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.3521799
+Valid RMSE:  1.5160332
+Test RMSE:  1.284418
+
+156.11949795484543
+EPOCH:  1
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.980496
+Valid RMSE:  1.8840876
+Test RMSE:  1.9865085
+
+146.7583748102188
+EPOCH:  2
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1837372
+Valid RMSE:  1.2697574
+Test RMSE:  1.1461208
+
+139.15776723623276
+EPOCH:  3
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.4045815
+Valid RMSE:  1.6577346
+Test RMSE:  1.3635167
+
+145.24338513612747
+EPOCH:  4
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.3559402
+Valid RMSE:  1.3683075
+Test RMSE:  1.3714236
+
+138.06106609106064
+EPOCH:  5
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.261104
+Valid RMSE:  1.2828497
+Test RMSE:  1.2500494
+
+134.18690037727356
+EPOCH:  6
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1956573
+Valid RMSE:  1.2338598
+Test RMSE:  1.1698047
+
+134.02836900949478
+EPOCH:  7
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.2256365
+Valid RMSE:  1.2598836
+Test RMSE:  1.1701696
+
+139.89950877428055
+EPOCH:  8
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1287686
+Valid RMSE:  1.2200611
+Test RMSE:  1.0664518
+
+125.95671945810318
+EPOCH:  9
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1481622
+Valid RMSE:  1.200805
+Test RMSE:  1.1219676
+
+129.10398662090302
+EPOCH:  10
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1285374
+Valid RMSE:  1.2567219
+Test RMSE:  1.0570964
+
+135.93249678611755
+EPOCH:  11
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1121644
+Valid RMSE:  1.2126733
+Test RMSE:  1.0492811
+
+131.26903545856476
+EPOCH:  12
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.5286961
+Valid RMSE:  1.5233692
+Test RMSE:  1.6001843
+
+132.31236481666565
+EPOCH:  13
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1313275
+Valid RMSE:  1.1938363
+Test RMSE:  1.0702932
+
+125.73432597517967
+EPOCH:  14
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1122727
+Valid RMSE:  1.205197
+Test RMSE:  1.0795877
+
+125.08893990516663
+EPOCH:  15
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.133755
+Valid RMSE:  1.2708801
+Test RMSE:  1.0468591
+
+132.09014683961868
+EPOCH:  16
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1761979
+Valid RMSE:  1.2217513
+Test RMSE:  1.1386025
+
+123.69501864910126
+EPOCH:  17
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1538159
+Valid RMSE:  1.2046188
+Test RMSE:  1.1626905
+
+124.83308571577072
+EPOCH:  18
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1032264
+Valid RMSE:  1.2268604
+Test RMSE:  1.0313905
+
+126.510449051857
+EPOCH:  19
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1282642
+Valid RMSE:  1.2064515
+Test RMSE:  1.1142834
+
+124.51347476243973
+EPOCH:  20
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.2311658
+Valid RMSE:  1.2653316
+Test RMSE:  1.2202401
+
+128.6715493798256
+EPOCH:  21
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.101212
+Valid RMSE:  1.2645291
+Test RMSE:  1.0586549
+
+123.71192663908005
+EPOCH:  22
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.2510318
+Valid RMSE:  1.2929387
+Test RMSE:  1.261502
+
+120.45988476276398
+EPOCH:  23
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0837066
+Valid RMSE:  1.209632
+Test RMSE:  1.0274577
+
+124.13488978147507
+EPOCH:  24
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1795248
+Valid RMSE:  1.2236131
+Test RMSE:  1.14978
+
+124.16275441646576
+EPOCH:  25
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0783089
+Valid RMSE:  1.1703459
+Test RMSE:  1.0367047
+
+125.95979380607605
+EPOCH:  26
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1109667
+Valid RMSE:  1.1853181
+Test RMSE:  1.0540324
+
+121.42285054922104
+EPOCH:  27
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.077736
+Valid RMSE:  1.1531942
+Test RMSE:  1.0661927
+
+121.71093964576721
+EPOCH:  28
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.080644
+Valid RMSE:  1.1904575
+Test RMSE:  1.0289215
+
+122.23347735404968
+EPOCH:  29
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1012088
+Valid RMSE:  1.1696436
+Test RMSE:  1.0936955
+
+118.19892531633377
+EPOCH:  30
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0796431
+Valid RMSE:  1.2053564
+Test RMSE:  1.0138578
+
+116.62188279628754
+EPOCH:  31
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0591727
+Valid RMSE:  1.1909703
+Test RMSE:  1.0420954
+
+120.103624522686
+EPOCH:  32
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0927179
+Valid RMSE:  1.1594163
+Test RMSE:  1.1122268
+
+119.01990419626236
+EPOCH:  33
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0395827
+Valid RMSE:  1.1350098
+Test RMSE:  1.0668213
+
+123.98924630880356
+EPOCH:  34
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0725044
+Valid RMSE:  1.1505591
+Test RMSE:  1.0946513
+
+120.71229499578476
+EPOCH:  35
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0444152
+Valid RMSE:  1.1677934
+Test RMSE:  1.017633
+
+119.62270790338516
+EPOCH:  36
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1523634
+Valid RMSE:  1.2011209
+Test RMSE:  1.1756778
+
+117.38963282108307
+EPOCH:  37
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1688783
+Valid RMSE:  1.2295613
+Test RMSE:  1.2099249
+
+119.68263190984726
+EPOCH:  38
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.06453
+Valid RMSE:  1.1379178
+Test RMSE:  1.076042
+
+116.57123351097107
+EPOCH:  39
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.052705
+Valid RMSE:  1.1617486
+Test RMSE:  1.106196
+
+118.77587300539017
+EPOCH:  40
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.2561666
+Valid RMSE:  1.284958
+Test RMSE:  1.3028544
+
+117.28159636259079
+EPOCH:  41
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.065676
+Valid RMSE:  1.1457424
+Test RMSE:  1.1110706
+
+120.79328659176826
+EPOCH:  42
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.153098
+Valid RMSE:  1.1982359
+Test RMSE:  1.1921843
+
+119.71659237146378
+EPOCH:  43
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0757167
+Valid RMSE:  1.1655917
+Test RMSE:  1.0697424
+
+120.90383511781693
+EPOCH:  44
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0627851
+Valid RMSE:  1.1469406
+Test RMSE:  1.0812366
+
+124.88413554430008
+EPOCH:  45
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0528182
+Valid RMSE:  1.1597643
+Test RMSE:  1.0938618
+
+118.46878111362457
+EPOCH:  46
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.2483864
+Valid RMSE:  1.3314728
+Test RMSE:  1.4701916
+
+117.02354043722153
+EPOCH:  47
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0334722
+Valid RMSE:  1.1545525
+Test RMSE:  1.040185
+
+115.3787430524826
+EPOCH:  48
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.99663705
+Valid RMSE:  1.1256063
+Test RMSE:  1.0751837
+
+115.44864025712013
+EPOCH:  49
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1043538
+Valid RMSE:  1.1670899
+Test RMSE:  1.1501638
+
+114.47493129968643
+EPOCH:  50
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.99054897
+Valid RMSE:  1.1155756
+Test RMSE:  1.046563
+
+118.53839492797852
+EPOCH:  51
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0392302
+Valid RMSE:  1.1252838
+Test RMSE:  1.0996712
+
+115.92840194702148
+EPOCH:  52
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0442618
+Valid RMSE:  1.2018945
+Test RMSE:  1.0379962
+
+112.87919464707375
+EPOCH:  53
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0208741
+Valid RMSE:  1.1348437
+Test RMSE:  1.0407993
+
+118.6946134865284
+EPOCH:  54
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9879364
+Valid RMSE:  1.1247826
+Test RMSE:  1.0077509
+
+115.96266317367554
+EPOCH:  55
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0205971
+Valid RMSE:  1.1769943
+Test RMSE:  1.0435729
+
+116.39237624406815
+EPOCH:  56
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0844138
+Valid RMSE:  1.2330732
+Test RMSE:  1.0663747
+
+115.72580069303513
+EPOCH:  57
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0294957
+Valid RMSE:  1.1598393
+Test RMSE:  1.0409973
+
+114.0881364941597
+EPOCH:  58
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9923497
+Valid RMSE:  1.1113183
+Test RMSE:  1.0275136
+
+112.62538278102875
+EPOCH:  59
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0503336
+Valid RMSE:  1.1414293
+Test RMSE:  1.1783015
+
+119.41602826118469
+EPOCH:  60
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.109955
+Valid RMSE:  1.1879658
+Test RMSE:  1.1842545
+
+116.56330132484436
+EPOCH:  61
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0151737
+Valid RMSE:  1.1886961
+Test RMSE:  1.0273436
+
+114.50429892539978
+EPOCH:  62
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0650619
+Valid RMSE:  1.1759975
+Test RMSE:  1.1991777
+
+112.38078272342682
+EPOCH:  63
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.978046
+Valid RMSE:  1.1090435
+Test RMSE:  1.0351785
+
+113.22933959960938
+EPOCH:  64
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0396093
+Valid RMSE:  1.230989
+Test RMSE:  1.073382
+
+112.66463524103165
+EPOCH:  65
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.99000615
+Valid RMSE:  1.1578476
+Test RMSE:  1.041488
+
+113.62810891866684
+EPOCH:  66
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0256811
+Valid RMSE:  1.1263701
+Test RMSE:  1.131254
+
+114.02101051807404
+EPOCH:  67
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9920179
+Valid RMSE:  1.1145574
+Test RMSE:  1.0391217
+
+110.65979933738708
+EPOCH:  68
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0052425
+Valid RMSE:  1.1066303
+Test RMSE:  1.1026508
+
+111.29323303699493
+EPOCH:  69
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0031904
+Valid RMSE:  1.1763467
+Test RMSE:  1.05329
+
+113.42603135108948
+EPOCH:  70
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0385462
+Valid RMSE:  1.1347224
+Test RMSE:  1.0985619
+
+113.60401690006256
+EPOCH:  71
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0422773
+Valid RMSE:  1.1789291
+Test RMSE:  1.0762496
+
+112.74300611019135
+EPOCH:  72
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9897865
+Valid RMSE:  1.1653606
+Test RMSE:  1.0435085
+
+113.86786216497421
+EPOCH:  73
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0043911
+Valid RMSE:  1.1196954
+Test RMSE:  1.0434927
+
+110.97482219338417
+EPOCH:  74
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0216395
+Valid RMSE:  1.1270792
+Test RMSE:  1.1312102
+
+112.7115952372551
+EPOCH:  75
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.97862285
+Valid RMSE:  1.1307873
+Test RMSE:  1.1422375
+
+110.52018654346466
+EPOCH:  76
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9649054
+Valid RMSE:  1.1211519
+Test RMSE:  1.0155183
+
+111.5265976190567
+EPOCH:  77
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9910521
+Valid RMSE:  1.1222209
+Test RMSE:  1.0441551
+
+116.13393327593803
+EPOCH:  78
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0854465
+Valid RMSE:  1.1921915
+Test RMSE:  1.2280154
+
+113.10124331712723
+EPOCH:  79
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0071605
+Valid RMSE:  1.1375237
+Test RMSE:  1.0704802
+
+112.21816390752792
+EPOCH:  80
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0078808
+Valid RMSE:  1.1424569
+Test RMSE:  1.0791802
+
+108.80769765377045
+EPOCH:  81
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96595573
+Valid RMSE:  1.076296
+Test RMSE:  1.0813909
+
+113.20862603187561
+EPOCH:  82
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9830859
+Valid RMSE:  1.1451269
+Test RMSE:  1.1899688
+
+113.88501504063606
+EPOCH:  83
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9860283
+Valid RMSE:  1.1120725
+Test RMSE:  1.0602803
+
+110.46119219064713
+EPOCH:  84
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0165594
+Valid RMSE:  1.121635
+Test RMSE:  1.1396707
+
+111.4597880244255
+EPOCH:  85
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.97091854
+Valid RMSE:  1.1358435
+Test RMSE:  1.0424893
+
+115.8150759935379
+EPOCH:  86
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.97875667
+Valid RMSE:  1.0953531
+Test RMSE:  1.0700512
+
+112.35348349809647
+EPOCH:  87
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.98092824
+Valid RMSE:  1.1084679
+Test RMSE:  1.0431366
+
+110.51188653707504
+EPOCH:  88
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9393752
+Valid RMSE:  1.1106062
+Test RMSE:  1.0329279
+
+110.397689640522
+EPOCH:  89
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9486626
+Valid RMSE:  1.0872986
+Test RMSE:  1.0400152
+
+110.71540874242783
+EPOCH:  90
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9947536
+Valid RMSE:  1.1364201
+Test RMSE:  1.0429275
+
+110.58957496285439
+EPOCH:  91
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9751789
+Valid RMSE:  1.087893
+Test RMSE:  1.1113989
+
+112.84768557548523
+EPOCH:  92
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9618423
+Valid RMSE:  1.0967752
+Test RMSE:  1.0951567
+
+110.27130764722824
+EPOCH:  93
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.94018847
+Valid RMSE:  1.1212001
+Test RMSE:  1.0571295
+
+110.15201646089554
+EPOCH:  94
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.1762283
+Valid RMSE:  1.2719892
+Test RMSE:  1.3054473
+
+108.80994206666946
+EPOCH:  95
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9634032
+Valid RMSE:  1.1748672
+Test RMSE:  1.1006835
+
+109.36218863725662
+EPOCH:  96
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.95464283
+Valid RMSE:  1.0996475
+Test RMSE:  1.0440915
+
+110.42271009087563
+EPOCH:  97
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9731801
+Valid RMSE:  1.1538053
+Test RMSE:  1.0393112
+
+111.12436771392822
+EPOCH:  98
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9838757
+Valid RMSE:  1.1732447
+Test RMSE:  1.04044
+
+109.73394817113876
+EPOCH:  99
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9507496
+Valid RMSE:  1.1025398
+Test RMSE:  1.0479809
+
+109.92289072275162
+EPOCH:  100
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96388334
+Valid RMSE:  1.1015291
+Test RMSE:  1.0440537
+
+110.76619866490364
+EPOCH:  101
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9317382
+Valid RMSE:  1.100424
+Test RMSE:  1.0170547
+
+109.81693202257156
+EPOCH:  102
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.93334705
+Valid RMSE:  1.0986137
+Test RMSE:  1.0417472
+
+107.98319062590599
+EPOCH:  103
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.93229353
+Valid RMSE:  1.0788938
+Test RMSE:  1.0354519
+
+107.6416158080101
+EPOCH:  104
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96520936
+Valid RMSE:  1.0904127
+Test RMSE:  1.0850822
+
+111.4794756770134
+EPOCH:  105
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9809364
+Valid RMSE:  1.1178482
+Test RMSE:  1.0487657
+
+107.19215580821037
+EPOCH:  106
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.91154706
+Valid RMSE:  1.0862455
+Test RMSE:  1.0412161
+
+109.16068059206009
+EPOCH:  107
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9625552
+Valid RMSE:  1.0938404
+Test RMSE:  1.0906682
+
+110.83901324868202
+EPOCH:  108
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.99251825
+Valid RMSE:  1.1584319
+Test RMSE:  1.0381899
+
+109.50867128372192
+EPOCH:  109
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96892875
+Valid RMSE:  1.1236067
+Test RMSE:  1.0680674
+
+108.39531168341637
+EPOCH:  110
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.984942
+Valid RMSE:  1.1892556
+Test RMSE:  1.062516
+
+107.78695869445801
+EPOCH:  111
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.93286836
+Valid RMSE:  1.1204816
+Test RMSE:  1.0618892
+
+111.92762625217438
+EPOCH:  112
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0440196
+Valid RMSE:  1.2585086
+Test RMSE:  1.0565349
+
+109.16187396645546
+EPOCH:  113
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.93353856
+Valid RMSE:  1.1206492
+Test RMSE:  1.0383693
+
+109.41203838586807
+EPOCH:  114
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.94045466
+Valid RMSE:  1.1232194
+Test RMSE:  1.0444484
+
+106.35870751738548
+EPOCH:  115
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9588205
+Valid RMSE:  1.1240338
+Test RMSE:  1.0267034
+
+108.53767514228821
+EPOCH:  116
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96959484
+Valid RMSE:  1.1388134
+Test RMSE:  1.2170297
+
+108.24310344457626
+EPOCH:  117
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.94809425
+Valid RMSE:  1.092622
+Test RMSE:  1.0966891
+
+104.60928702354431
+EPOCH:  118
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96937007
+Valid RMSE:  1.1452404
+Test RMSE:  1.0861814
+
+110.40610599517822
+EPOCH:  119
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9891507
+Valid RMSE:  1.1371881
+Test RMSE:  1.0614915
+
+109.58765107393265
+EPOCH:  120
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9466381
+Valid RMSE:  1.0812709
+Test RMSE:  1.0524956
+
+107.89224934577942
+EPOCH:  121
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9451704
+Valid RMSE:  1.0798558
+Test RMSE:  1.079507
+
+110.6405138373375
+EPOCH:  122
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9094523
+Valid RMSE:  1.0782657
+Test RMSE:  1.0411776
+
+109.07503235340118
+EPOCH:  123
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.92428195
+Valid RMSE:  1.1142806
+Test RMSE:  1.0283862
+
+108.87686550617218
+EPOCH:  124
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0109712
+Valid RMSE:  1.1920118
+Test RMSE:  1.0852565
+
+108.81030642986298
+EPOCH:  125
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8944414
+Valid RMSE:  1.073992
+Test RMSE:  1.0267767
+
+108.55083334445953
+EPOCH:  126
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0064278
+Valid RMSE:  1.1506929
+Test RMSE:  1.1505573
+
+107.17626118659973
+EPOCH:  127
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0919886
+Valid RMSE:  1.2383975
+Test RMSE:  1.3214661
+
+106.5077936053276
+EPOCH:  128
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9157163
+Valid RMSE:  1.0599812
+Test RMSE:  1.0376626
+
+107.01085078716278
+EPOCH:  129
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9874176
+Valid RMSE:  1.0971632
+Test RMSE:  1.146847
+
+107.80382567644119
+EPOCH:  130
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.95585036
+Valid RMSE:  1.0775565
+Test RMSE:  1.0844195
+
+106.64154708385468
+EPOCH:  131
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.92458785
+Valid RMSE:  1.0777274
+Test RMSE:  1.0458343
+
+106.64731252193451
+EPOCH:  132
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9675877
+Valid RMSE:  1.0964555
+Test RMSE:  1.0973208
+
+109.17090520262718
+EPOCH:  133
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9168246
+Valid RMSE:  1.0458648
+Test RMSE:  1.0430493
+
+110.05438274145126
+EPOCH:  134
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.94965416
+Valid RMSE:  1.126904
+Test RMSE:  1.0404528
+
+106.44656985998154
+EPOCH:  135
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9360908
+Valid RMSE:  1.0888253
+Test RMSE:  1.0283724
+
+107.10083729028702
+EPOCH:  136
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9455395
+Valid RMSE:  1.1339501
+Test RMSE:  1.0421891
+
+107.1823902130127
+EPOCH:  137
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.91180843
+Valid RMSE:  1.0979463
+Test RMSE:  1.0142338
+
+102.13700461387634
+EPOCH:  138
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.94327277
+Valid RMSE:  1.0621592
+Test RMSE:  1.1075046
+
+106.25089401006699
+EPOCH:  139
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9660309
+Valid RMSE:  1.1418436
+Test RMSE:  1.0201722
+
+105.52662873268127
+EPOCH:  140
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.908616
+Valid RMSE:  1.0814188
+Test RMSE:  1.0301617
+
+106.52747797966003
+EPOCH:  141
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9429
+Valid RMSE:  1.0931076
+Test RMSE:  1.0380496
+
+105.84511840343475
+EPOCH:  142
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9366021
+Valid RMSE:  1.1116627
+Test RMSE:  1.0651226
+
+107.6808585524559
+EPOCH:  143
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.95296454
+Valid RMSE:  1.0743197
+Test RMSE:  1.0602449
+
+107.11143824458122
+EPOCH:  144
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.90962714
+Valid RMSE:  1.0582554
+Test RMSE:  1.0254632
+
+104.36970072984695
+EPOCH:  145
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9530435
+Valid RMSE:  1.0989761
+Test RMSE:  1.0625625
+
+104.10265183448792
+EPOCH:  146
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9919678
+Valid RMSE:  1.1129547
+Test RMSE:  1.177607
+
+107.62873682379723
+EPOCH:  147
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.90175563
+Valid RMSE:  1.0731132
+Test RMSE:  1.0283427
+
+105.50698578357697
+EPOCH:  148
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.93269885
+Valid RMSE:  1.0674567
+Test RMSE:  1.0871329
+
+108.75099414587021
+EPOCH:  149
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9072431
+Valid RMSE:  1.0647312
+Test RMSE:  1.0670875
+
+104.25585103034973
+EPOCH:  150
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0491676
+Valid RMSE:  1.1772951
+Test RMSE:  1.229645
+
+110.64040464162827
+EPOCH:  151
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9959251
+Valid RMSE:  1.1309625
+Test RMSE:  1.1083028
+
+105.73407977819443
+EPOCH:  152
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9384461
+Valid RMSE:  1.1195112
+Test RMSE:  1.0217516
+
+108.73427322506905
+EPOCH:  153
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9680029
+Valid RMSE:  1.0795041
+Test RMSE:  1.0198141
+
+106.93749541044235
+EPOCH:  154
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.97787905
+Valid RMSE:  1.1047268
+Test RMSE:  1.1590359
+
+105.57580271363258
+EPOCH:  155
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9119454
+Valid RMSE:  1.0511475
+Test RMSE:  1.0326476
+
+105.7845578789711
+EPOCH:  156
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9175983
+Valid RMSE:  1.0515951
+Test RMSE:  1.047532
+
+106.75926405191422
+EPOCH:  157
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.93619597
+Valid RMSE:  1.0841297
+Test RMSE:  1.029716
+
+104.84618246555328
+EPOCH:  158
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96257585
+Valid RMSE:  1.0828371
+Test RMSE:  1.0956694
+
+102.56781536340714
+EPOCH:  159
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.91008824
+Valid RMSE:  1.0915401
+Test RMSE:  1.0208064
+
+104.66657444834709
+EPOCH:  160
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8893556
+Valid RMSE:  1.0517915
+Test RMSE:  1.0187008
+
+106.25417560338974
+EPOCH:  161
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9445445
+Valid RMSE:  1.1100789
+Test RMSE:  1.0391618
+
+106.63038742542267
+EPOCH:  162
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.91480184
+Valid RMSE:  1.0572612
+Test RMSE:  1.0409733
+
+109.14514046907425
+EPOCH:  163
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9732162
+Valid RMSE:  1.1478721
+Test RMSE:  1.0403706
+
+106.27694842219353
+EPOCH:  164
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9597379
+Valid RMSE:  1.1566546
+Test RMSE:  1.0842314
+
+107.31297877430916
+EPOCH:  165
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.92850435
+Valid RMSE:  1.0628228
+Test RMSE:  1.084662
+
+106.22488105297089
+EPOCH:  166
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8981104
+Valid RMSE:  1.0332829
+Test RMSE:  1.0355715
+
+106.06443339586258
+EPOCH:  167
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96164376
+Valid RMSE:  1.1597619
+Test RMSE:  1.0783523
+
+107.13262403011322
+EPOCH:  168
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.92406505
+Valid RMSE:  1.0818746
+Test RMSE:  1.1244577
+
+105.56793117523193
+EPOCH:  169
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9085916
+Valid RMSE:  1.0671504
+Test RMSE:  1.0602956
+
+103.80668586492538
+EPOCH:  170
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9248959
+Valid RMSE:  1.1177517
+Test RMSE:  1.04391
+
+104.63889533281326
+EPOCH:  171
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  1.0285438
+Valid RMSE:  1.1542814
+Test RMSE:  1.1226838
+
+108.54211169481277
+EPOCH:  172
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9212773
+Valid RMSE:  1.1146998
+Test RMSE:  1.02458
+
+105.08210963010788
+EPOCH:  173
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.89848226
+Valid RMSE:  1.0631888
+Test RMSE:  1.0334682
+
+105.77594643831253
+EPOCH:  174
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9134455
+Valid RMSE:  1.098014
+Test RMSE:  1.0030847
+
+104.37987381219864
+EPOCH:  175
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9205673
+Valid RMSE:  1.0677642
+Test RMSE:  1.0561072
+
+103.489337682724
+EPOCH:  176
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8954225
+Valid RMSE:  1.0665768
+Test RMSE:  1.0569838
+
+103.52630269527435
+EPOCH:  177
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9096116
+Valid RMSE:  1.0506905
+Test RMSE:  1.0601608
+
+103.74592101573944
+EPOCH:  178
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9160445
+Valid RMSE:  1.085195
+Test RMSE:  1.0754237
+
+107.45210832357407
+EPOCH:  179
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8997667
+Valid RMSE:  1.0727338
+Test RMSE:  1.0202943
+
+105.96096450090408
+EPOCH:  180
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8836288
+Valid RMSE:  1.0649686
+Test RMSE:  1.0378772
+
+107.14749926328659
+EPOCH:  181
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8686798
+Valid RMSE:  1.0315528
+Test RMSE:  1.0508711
+
+106.406743735075
+EPOCH:  182
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.96373653
+Valid RMSE:  1.1569695
+Test RMSE:  1.0608525
+
+106.3599328994751
+EPOCH:  183
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9542476
+Valid RMSE:  1.096406
+Test RMSE:  1.0825149
+
+103.71958753466606
+EPOCH:  184
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8712176
+Valid RMSE:  1.057651
+Test RMSE:  0.9993459
+
+106.29863768815994
+EPOCH:  185
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.92684376
+Valid RMSE:  1.0820522
+Test RMSE:  1.0851965
+
+105.24199146032333
+EPOCH:  186
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8723479
+Valid RMSE:  1.0596629
+Test RMSE:  1.0144359
+
+104.57034114003181
+EPOCH:  187
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.89032185
+Valid RMSE:  1.0654527
+Test RMSE:  1.0234892
+
+104.86361289024353
+EPOCH:  188
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9525611
+Valid RMSE:  1.1929647
+Test RMSE:  1.0379156
+
+108.49843382835388
+EPOCH:  189
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8726634
+Valid RMSE:  1.0737478
+Test RMSE:  1.0200812
+
+104.43359243869781
+EPOCH:  190
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9320893
+Valid RMSE:  1.076202
+Test RMSE:  1.0854161
+
+104.04878705739975
+EPOCH:  191
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.8745896
+Valid RMSE:  1.0752192
+Test RMSE:  1.0244578
+
+104.44265067577362
+EPOCH:  192
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.95960903
+Valid RMSE:  1.1526723
+Test RMSE:  1.0745739
+
+105.1967254281044
+EPOCH:  193
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9904467
+Valid RMSE:  1.1434162
+Test RMSE:  1.1006761
+
+107.09590023756027
+EPOCH:  194
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.9344792
+Valid RMSE:  1.1890965
+Test RMSE:  1.0746104
+
+103.940893471241
+EPOCH:  195
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.994081
+Valid RMSE:  1.2381604
+Test RMSE:  1.0976806
+
+107.48389571905136
+EPOCH:  196
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.92176056
+Valid RMSE:  1.0720873
+Test RMSE:  1.0720768
+
+104.37886282801628
+EPOCH:  197
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.92146397
+Valid RMSE:  1.0715262
+Test RMSE:  1.0448042
+
+103.98652511835098
+EPOCH:  198
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.89139634
+Valid RMSE:  1.0668638
+Test RMSE:  1.0191102
+
+106.41643407940865
+EPOCH:  199
+
+-----------------------------
+
+./molecules_config/ogbg-mollipo.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  add
+Features:  combine
+Train RMSE:  0.89349204
+Valid RMSE:  1.1011876
+Test RMSE:  1.0204563
+
+Time taken for 200 epochs:  214.9642517566681

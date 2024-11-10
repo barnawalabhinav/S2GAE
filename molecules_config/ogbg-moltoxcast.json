@@ -1,0 +1,6 @@
+{
+    "dataset": "ogbg-moltoxcast",
+    "task": "Graph Classification",
+    "number_of_tasks": 617,
+    "number_of_classes": 2
+}

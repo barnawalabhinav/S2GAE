@@ -1,0 +1,2 @@
+mlpmuv3.txt
+Best Metrics: {'best_train_auc': 0.57139876822343, 'best_train_acc': 0.998100592387387, 'best_valid_auc': 0.6421798151096973, 'best_valid_acc': 0.9978732516822458, 'best_test_auc': 0.5302950962315034, 'best_test_acc': 0.9977758649148581}

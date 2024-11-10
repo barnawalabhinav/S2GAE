@@ -1,0 +1,29 @@
+Pre-trained model loaded
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molsider.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth', runs=3, sample_weights=True, scratch=False, seed=42, svm=False, use_sage='GCN', use_valedges_as_input=False)
+19.432605803012848
+torch.Size([1141, 27])
+torch.Size([1141, 27])
+torch.Size([143, 27])
+torch.Size([143, 27])
+torch.Size([143, 27])
+torch.Size([143, 27])
+
+-----------------------------
+
+./molecules_config/ogbg-molsider.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model140.pth
+Backbone Frozen!
+Using MLP
+Pooling used:  mean
+Features:  combine
+Train AUC:  0.5603812201156807
+Train ACC:  0.7506735482195603
+Train Precision:  0.5296635715813434
+Valid AUC:  0.5013565251794959
+Valid ACC:  0.774151774151774
+Valid Precision:  0.5536597208942207
+Test AUC:  0.5405124160611543
+Test ACC:  0.7681947681947683
+Test Precision:  0.5396853146853147
+
+Time taken for 300 epochs:  2.244685411453247

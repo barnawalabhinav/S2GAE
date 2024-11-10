@@ -1,0 +1,43 @@
+Pre-trained model loaded
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molhiv.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth', runs=3, sample_weights=True, scratch=False, seed=42, svm=True, use_sage='GCN', use_valedges_as_input=False)
+Task number:  1
+
+-----------------------------
+
+./molecules_config/ogbg-molhiv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  mean
+Features:  last
+Train AUC:  0.879874922750053
+Train ACC:  0.7842922707516489
+Train Precision:  0.1279025504377617
+Valid AUC:  0.7285083529296492
+Valid ACC:  0.7816678823243375
+Valid Precision:  0.053551912568306013
+Test AUC:  0.6912377604820488
+Test ACC:  0.762217359591539
+Test Precision:  0.06822810590631365
+
+Averaged Results
+
+-----------------------------
+
+./molecules_config/ogbg-molhiv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  mean
+Features:  last
+Train AUC:  0.879874922750053
+Train ACC:  0.7842922707516489
+Train Precision:  0.1279025504377617
+Valid AUC:  0.7285083529296492
+Valid ACC:  0.7816678823243375
+Valid Precision:  0.053551912568306013
+Test AUC:  0.6912377604820488
+Test ACC:  0.762217359591539
+Test Precision:  0.06822810590631365
+
+Time taken =  1241.8248882293701

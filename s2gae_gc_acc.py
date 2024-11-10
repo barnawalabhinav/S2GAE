@@ -23,6 +23,7 @@ from sklearn.metrics import f1_score
 import os.path as osp
 from torch_geometric.nn import Node2Vec, global_mean_pool, global_add_pool, global_max_pool
 from collections import Counter
+from sklearn.metrics import roc_auc_score
 
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0' 

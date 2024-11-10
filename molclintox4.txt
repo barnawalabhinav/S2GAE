@@ -1,0 +1,63 @@
+Pre-trained model loaded
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molclintox.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth', runs=3, sample_weights=True, scratch=False, seed=42, svm=True, use_sage='GCN', use_valedges_as_input=False)
+Task number:  1
+
+-----------------------------
+
+./molecules_config/ogbg-molclintox.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  mean
+Features:  last
+Train AUC:  0.9079586739327885
+Train ACC:  0.6629974597798476
+Train Precision:  0.9971711456859972
+Valid AUC:  0.6391608391608391
+Valid ACC:  0.5743243243243243
+Valid Precision:  0.9761904761904762
+Test AUC:  0.5971223021582733
+Test ACC:  0.39864864864864863
+Test Precision:  0.9629629629629629
+
+Task number:  2
+
+-----------------------------
+
+./molecules_config/ogbg-molclintox.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  mean
+Features:  last
+Train AUC:  0.8764784946236559
+Train ACC:  0.6460626587637596
+Train Precision:  0.178
+Valid AUC:  0.6115023474178404
+Valid ACC:  0.5878378378378378
+Valid Precision:  0.04918032786885246
+Test AUC:  0.605072463768116
+Test ACC:  0.42567567567567566
+Test Precision:  0.08791208791208792
+
+Averaged Results
+
+-----------------------------
+
+./molecules_config/ogbg-molclintox.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  mean
+Features:  last
+Train AUC:  0.8922185842782222
+Train ACC:  0.6545300592718035
+Train Precision:  0.5875855728429986
+Valid AUC:  0.6253315932893397
+Valid ACC:  0.5810810810810811
+Valid Precision:  0.5126854020296643
+Test AUC:  0.6010973829631947
+Test ACC:  0.41216216216216217
+Test Precision:  0.5254375254375254
+
+Time taken =  2.3944709300994873

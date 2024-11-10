@@ -1,0 +1,98 @@
+$ python3 s2gae_transfer.py
+Pre-trained model loaded
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molhiv.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, kernel=True, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='add', pretrained_path='./weight/s2gaesvm-GCN512_zinc12k_dm_2_hidd128-0.8-3-256_model.pth', runs=3, seed=42, svm=True, use_sage='GCN', use_valedges_as_input=False)
+/home/cse/dual/cs5200450/.conda/envs/s2gae/lib/python3.7/site-packages/torch_geometric/deprecation.py:22: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+.........................*
+optimization finished, #iter = 25131
+obj = -20408.350313, rho = 0.347710
+nSV = 20984, nBSV = 20931
+Total nSV = 20984
+.........................*
+optimization finished, #iter = 25213
+obj = -20401.831968, rho = 0.345541
+nSV = 20941, nBSV = 20881
+Total nSV = 20941
+.........................*
+optimization finished, #iter = 25128
+obj = -20273.030190, rho = 0.032120
+nSV = 20795, nBSV = 20739
+Total nSV = 20795
+.........................*
+optimization finished, #iter = 25048
+obj = -20215.597694, rho = 0.226226
+nSV = 20791, nBSV = 20732
+Total nSV = 20791
+.........................*
+optimization finished, #iter = 25137
+obj = -19829.860511, rho = 0.301417
+nSV = 20397, nBSV = 20336
+Total nSV = 20397
+.............................*
+optimization finished, #iter = 29836
+obj = -25172.800174, rho = -0.290976
+nSV = 25876, nBSV = 25809
+Total nSV = 25876
+[LibSVM]Time taken =  1416.2946119308472
+
+-----------------------------
+
+./molecules_config/ogbg-molhiv.json
+./weight/s2gaesvm-GCN512_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.7155779464780381
+Train ACC:  0.8368742591410595
+Valid AUC:  0.7274428032529884
+Valid ACC:  0.8234865061998541
+Test AUC:  0.7495413198400894
+Test ACC:  0.8519328956965718
+
+........................*
+optimization finished, #iter = 24885
+obj = -20185.795572, rho = 0.462720
+nSV = 20763, nBSV = 20715
+Total nSV = 20763
+........................*
+optimization finished, #iter = 24905
+obj = -20248.455613, rho = 0.224416
+nSV = 20756, nBSV = 20693
+Total nSV = 20756
+.........................*
+optimization finished, #iter = 25309
+obj = -20239.743280, rho = 0.292699
+nSV = 20748, nBSV = 20684
+Total nSV = 20748
+........................*
+optimization finished, #iter = 24791
+obj = -19728.409579, rho = 0.520055
+nSV = 20317, nBSV = 20261
+Total nSV = 20317
+.........................*
+optimization finished, #iter = 25158
+obj = -20729.672327, rho = 0.157294
+nSV = 21366, nBSV = 21312
+Total nSV = 21366
+.............................*
+optimization finished, #iter = 29662
+obj = -25188.949367, rho = -0.328507
+nSV = 25897, nBSV = 25834
+Total nSV = 25897
+[LibSVM]Time taken =  2347.5120413303375
+
+-----------------------------
+
+./molecules_config/ogbg-molhiv.json
+./weight/s2gaesvm-GCN512_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  combine
+Train AUC:  0.7170303172466171
+Train ACC:  0.8355369137716179
+Valid AUC:  0.7271580442876739
+Valid ACC:  0.824945295404814
+Test AUC:  0.7453175997991465
+Test ACC:  0.850230974957452

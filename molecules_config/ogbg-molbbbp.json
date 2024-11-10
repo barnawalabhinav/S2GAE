@@ -1,0 +1,6 @@
+{
+    "dataset": "ogbg-molbbbp",
+    "task": "Graph Classification",
+    "number_of_tasks": 1,
+    "number_of_classes": 2
+}

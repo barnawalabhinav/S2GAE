@@ -1,0 +1,107 @@
+Namespace(batch_size=1024, dataset='zinc12k', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, graph_batch=1024, hidden_channels=128, log_steps=1, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, runs=1, seed=42, use_sage='GCN', use_valedges_as_input=False)
+Start training with mask ratio=0.8
+Epoch: 01, Best_epoch: 01, Best_valid: 67.61, Loss: 1.1608, 
+***************
+Epoch: 02, Best_epoch: 02, Best_valid: 70.24, Loss: 1.0026, 
+***************
+Epoch: 03, Best_epoch: 02, Best_valid: 70.24, Loss: 0.9522, 
+***************
+Epoch: 04, Best_epoch: 02, Best_valid: 70.24, Loss: 0.8954, 
+***************
+Epoch: 05, Best_epoch: 02, Best_valid: 70.24, Loss: 0.8349, 
+***************
+Epoch: 06, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7810, 
+***************
+Epoch: 07, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7342, 
+***************
+Epoch: 08, Best_epoch: 02, Best_valid: 70.24, Loss: 0.6907, 
+***************
+Epoch: 09, Best_epoch: 02, Best_valid: 70.24, Loss: 0.6533, 
+***************
+Epoch: 10, Best_epoch: 02, Best_valid: 70.24, Loss: 0.6250, 
+***************
+Epoch: 11, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5888, 
+***************
+Epoch: 12, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5629, 
+***************
+Epoch: 13, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5434, 
+***************
+Epoch: 14, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5312, 
+***************
+Epoch: 15, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5292, 
+***************
+Epoch: 16, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5169, 
+***************
+Epoch: 17, Best_epoch: 02, Best_valid: 70.24, Loss: 0.4622, 
+***************
+Epoch: 18, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5113, 
+***************
+Epoch: 19, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5787, 
+***************
+Epoch: 20, Best_epoch: 02, Best_valid: 70.24, Loss: 0.4479, 
+***************
+Epoch: 21, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5811, 
+***************
+Epoch: 22, Best_epoch: 02, Best_valid: 70.24, Loss: 0.6258, 
+***************
+Epoch: 23, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5956, 
+***************
+Epoch: 24, Best_epoch: 02, Best_valid: 70.24, Loss: 0.6806, 
+***************
+Epoch: 25, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5299, 
+***************
+Epoch: 26, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7692, 
+***************
+Epoch: 27, Best_epoch: 02, Best_valid: 70.24, Loss: 0.4080, 
+***************
+Epoch: 28, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7741, 
+***************
+Epoch: 29, Best_epoch: 02, Best_valid: 70.24, Loss: 0.8304, 
+***************
+Epoch: 30, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7400, 
+***************
+Epoch: 31, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7495, 
+***************
+Epoch: 32, Best_epoch: 02, Best_valid: 70.24, Loss: 0.8837, 
+***************
+Epoch: 33, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5554, 
+***************
+Epoch: 34, Best_epoch: 02, Best_valid: 70.24, Loss: 0.6780, 
+***************
+Epoch: 35, Best_epoch: 02, Best_valid: 70.24, Loss: 0.8440, 
+***************
+Epoch: 36, Best_epoch: 02, Best_valid: 70.24, Loss: 0.5942, 
+***************
+Epoch: 37, Best_epoch: 02, Best_valid: 70.24, Loss: 0.9964, 
+***************
+Epoch: 38, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7556, 
+***************
+Epoch: 39, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7839, 
+***************
+Epoch: 40, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7249, 
+***************
+Epoch: 41, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7838, 
+***************
+Epoch: 42, Best_epoch: 02, Best_valid: 70.24, Loss: 0.9628, 
+***************
+Epoch: 43, Best_epoch: 02, Best_valid: 70.24, Loss: 0.6690, 
+***************
+Epoch: 44, Best_epoch: 02, Best_valid: 70.24, Loss: 1.0244, 
+***************
+Epoch: 45, Best_epoch: 02, Best_valid: 70.24, Loss: 1.0542, 
+***************
+Epoch: 46, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7691, 
+***************
+Epoch: 47, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7277, 
+***************
+Epoch: 48, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7291, 
+***************
+Epoch: 49, Best_epoch: 02, Best_valid: 70.24, Loss: 0.6832, 
+***************
+Epoch: 50, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7290, 
+***************
+Epoch: 51, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7587, 
+***************
+Epoch: 52, Best_epoch: 02, Best_valid: 70.24, Loss: 0.7087, 
+***************
+Early stop at 52

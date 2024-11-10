@@ -1,0 +1,10 @@
+tox21 7,831 18.6 19.3 12 Binary class. ROC-AUC
+toxcast 8,576 18.8 19.3 617 Binary class. ROC-AUC
+muv 93,087 24.2 26.3 17 Binary class. AP
+bace 1,513 34.1 36.9 1 Binary class. ROC-AUC
+bbbp 2,039 24.1 26.0 1 Binary class. ROC-AUC
+clintox 1,477 26.2 27.9 2 Binary class. ROC-AUC
+sider 1,427 33.6 35.4 27 Binary class. ROC-AUC
+esol 1,128 13.3 13.7 1 Regression RMSE
+freesolv 642 8.7 8.4 1 Regression RMSE
+lipo 4,200 27.0 29.5 1 Regression RMSE

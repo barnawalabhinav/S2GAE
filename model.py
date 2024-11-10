@@ -4,7 +4,8 @@ from torch_geometric.nn import GCNConv, SAGEConv, GINConv
 from torch.nn import Linear
 import numpy as np
 from torch.nn import Sequential
-
+from torch_geometric.nn import global_mean_pool,global_add_pool, global_max_pool
+import torch.nn as nn
 class GCN(torch.nn.Module):
     def __init__(self, in_channels, hidden_channels, out_channels, num_layers,
                  dropout):
@@ -631,6 +632,37 @@ class GCN_mgaev3(torch.nn.Module):
         xx.append(x)
         x = torch.cat(xx, dim=1)
         return x
+
+class GCN_mgaev3_withMLP(torch.nn.Module):
+    def __init__(self, GCN_backbone, pooling,tasks,freeze_backbone,in_channels=256,hidden_dim=128):
+        super(GCN_mgaev3_withMLP,self).__init__()
+        self.gcn = GCN_backbone
+
+        if (freeze_backbone):
+            for param in self.gcn.parameters():
+                param.requires_grad = False
+        
+        if (pooling == "add"):
+            self.pool_func = global_add_pool
+        elif pooling == "mean":
+            self.pool_func = global_mean_pool
+        elif pooling == "max":
+            self.pool_func = global_max_pool
+        self.mlps = nn.ModuleList([nn.Sequential(
+            nn.Linear(in_channels, hidden_dim),
+            nn.ReLU(),
+            nn.Linear(hidden_dim, 1)
+        ) for _ in range(tasks)])
+
+    def forward(self,x, adj_t,batch):
+        x = self.gcn(x,adj_t)
+        x1 = x[0]
+        x2 = x[1]
+        x1 = self.pool_func(x1,batch)
+        x2 = self.pool_func(x2,batch)
+        x = torch.cat((x1,x2),dim = 1)
+        out = torch.cat([mlp(x) for mlp in self.mlps], dim=1)
+        return out
 
 
 class GCN_mgaev33(torch.nn.Module):

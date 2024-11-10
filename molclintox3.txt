@@ -1,0 +1,63 @@
+Pre-trained model loaded
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molclintox.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='mean', pretrained_path='weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model120.pth', runs=3, sample_weights=True, scratch=False, seed=42, svm=True, use_sage='GCN', use_valedges_as_input=False)
+Task number:  1
+
+-----------------------------
+
+./molecules_config/ogbg-molclintox.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model120.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  mean
+Features:  last
+Train AUC:  0.8925522252497728
+Train ACC:  0.6790855207451313
+Train Precision:  0.9904891304347826
+Valid AUC:  0.7244755244755245
+Valid ACC:  0.5675675675675675
+Valid Precision:  0.9876543209876543
+Test AUC:  0.6418864908073542
+Test ACC:  0.43243243243243246
+Test Precision:  0.9508196721311475
+
+Task number:  2
+
+-----------------------------
+
+./molecules_config/ogbg-molclintox.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model120.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  mean
+Features:  last
+Train AUC:  0.8644873271889401
+Train ACC:  0.6536833192209992
+Train Precision:  0.17598343685300208
+Valid AUC:  0.704225352112676
+Valid ACC:  0.5135135135135135
+Valid Precision:  0.06578947368421052
+Test AUC:  0.6492753623188405
+Test ACC:  0.46621621621621623
+Test Precision:  0.10344827586206896
+
+Averaged Results
+
+-----------------------------
+
+./molecules_config/ogbg-molclintox.json
+weight/s2gaesvm-GCN512_zinc250k_dm_2_hidd128-0.8-3-256_model120.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  mean
+Features:  last
+Train AUC:  0.8785197762193564
+Train ACC:  0.6663844199830653
+Train Precision:  0.5832362836438924
+Valid AUC:  0.7143504382941003
+Valid ACC:  0.5405405405405406
+Valid Precision:  0.5267218973359324
+Test AUC:  0.6455809265630974
+Test ACC:  0.44932432432432434
+Test Precision:  0.5271339739966082
+
+Time taken =  2.354721784591675

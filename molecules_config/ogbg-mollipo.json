@@ -1,0 +1,6 @@
+{
+    "dataset": "ogbg-mollipo",
+    "task": "Graph Regression",
+    "number_of_tasks": 1,
+    "number_of_classes": 1
+}

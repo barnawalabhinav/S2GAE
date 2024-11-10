@@ -1,0 +1,6 @@
+{
+    "dataset": "ogbg-molclintox",
+    "task": "Graph Classification",
+    "number_of_tasks": 2,
+    "number_of_classes": 2
+}

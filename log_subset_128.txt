@@ -1,0 +1,153 @@
+Namespace(batch_size=1024, dataset='zinc12k', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, graph_batch=128, hidden_channels=128, log_steps=1, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, runs=1, seed=42, use_sage='GCN', use_valedges_as_input=False)
+Start training with mask ratio=0.8
+Epoch: 01, Best_epoch: 01, Best_valid: 59.34, Loss: 0.4199, 
+***************
+Epoch: 02, Best_epoch: 02, Best_valid: 63.32, Loss: 0.0213, 
+***************
+Epoch: 03, Best_epoch: 02, Best_valid: 63.32, Loss: 0.0129, 
+***************
+Epoch: 04, Best_epoch: 04, Best_valid: 64.52, Loss: 0.0010, 
+***************
+Epoch: 05, Best_epoch: 04, Best_valid: 64.52, Loss: 0.0124, 
+***************
+Epoch: 06, Best_epoch: 06, Best_valid: 66.96, Loss: 0.0045, 
+***************
+Epoch: 07, Best_epoch: 07, Best_valid: 68.06, Loss: 0.0042, 
+***************
+Epoch: 08, Best_epoch: 07, Best_valid: 68.06, Loss: 0.0057, 
+***************
+Epoch: 09, Best_epoch: 07, Best_valid: 68.06, Loss: 0.0031, 
+***************
+Epoch: 10, Best_epoch: 07, Best_valid: 68.06, Loss: 0.0000, 
+***************
+Epoch: 11, Best_epoch: 07, Best_valid: 68.06, Loss: 0.0108, 
+***************
+Epoch: 12, Best_epoch: 12, Best_valid: 68.77, Loss: 0.0036, 
+***************
+Epoch: 13, Best_epoch: 12, Best_valid: 68.77, Loss: 0.0000, 
+***************
+Epoch: 14, Best_epoch: 12, Best_valid: 68.77, Loss: 0.0044, 
+***************
+Epoch: 15, Best_epoch: 15, Best_valid: 69.23, Loss: 0.0013, 
+***************
+Epoch: 16, Best_epoch: 15, Best_valid: 69.23, Loss: 0.0058, 
+***************
+Epoch: 17, Best_epoch: 15, Best_valid: 69.23, Loss: 0.0023, 
+***************
+Epoch: 18, Best_epoch: 15, Best_valid: 69.23, Loss: 0.0018, 
+***************
+Epoch: 19, Best_epoch: 15, Best_valid: 69.23, Loss: 0.0023, 
+***************
+Epoch: 20, Best_epoch: 15, Best_valid: 69.23, Loss: 0.0000, 
+***************
+Epoch: 21, Best_epoch: 15, Best_valid: 69.23, Loss: 0.0046, 
+***************
+Epoch: 22, Best_epoch: 22, Best_valid: 70.42, Loss: 0.0009, 
+***************
+Epoch: 23, Best_epoch: 22, Best_valid: 70.42, Loss: 0.0040, 
+***************
+Epoch: 24, Best_epoch: 24, Best_valid: 70.80, Loss: 0.0008, 
+***************
+Epoch: 25, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0016, 
+***************
+Epoch: 26, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0015, 
+***************
+Epoch: 27, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 28, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0001, 
+***************
+Epoch: 29, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0061, 
+***************
+Epoch: 30, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 31, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 32, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 33, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 34, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 35, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 36, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 37, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 38, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 39, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 40, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 41, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 42, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 43, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 44, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 45, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 46, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 47, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 48, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 49, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 50, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 51, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 52, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 53, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 54, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 55, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 56, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 57, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 58, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 59, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 60, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 61, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 62, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 63, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 64, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 65, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 66, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 67, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 68, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 69, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 70, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 71, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 72, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 73, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 74, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Epoch: 75, Best_epoch: 25, Best_valid: 73.86, Loss: 0.0000, 
+***************
+Early stop at 75

@@ -1,0 +1,2 @@
+mlpbace1.txt
+Best Metrics: {'best_train_auc': 0.905205479452055, 'best_train_acc': 0.7239669421487603, 'best_valid_auc': 0.7399267399267399, 'best_valid_acc': 0.5695364238410596, 'best_test_auc': 0.8202051817075291, 'best_test_acc': 0.7631578947368421}

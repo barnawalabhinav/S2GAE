@@ -1,0 +1,6 @@
+{
+    "dataset": "ogbg-molsider",
+    "task": "Graph Classification",
+    "number_of_tasks": 27,
+    "number_of_classes": 2
+}

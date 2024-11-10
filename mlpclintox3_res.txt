@@ -1,0 +1,2 @@
+mlpclintox3.txt
+Best Metrics: {'best_train_auc': 0.8748389150311613, 'best_train_acc': 0.9254868755292125, 'best_valid_auc': 0.8157670967530123, 'best_valid_acc': 0.9628378378378378, 'best_test_auc': 0.6910845236853995, 'best_test_acc': 0.9324324324324325}

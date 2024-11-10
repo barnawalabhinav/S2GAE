@@ -1,0 +1,363 @@
+Pre-trained model loaded
+Namespace(batch_size=1024, dataset_config='./molecules_config/ogbg-molmuv.json', decode_channels=256, decode_layers=3, device=0, dropout=0.5, epochs=400, eval_steps=1, freeze_backbone=True, graph_batch=128, hidden_channels=128, lr=0.001, mask_ratio=0.8, mask_type='dm', num_layers=2, patience=50, pooling='add', pretrained_path='weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth', runs=3, sample_weights=True, scratch=False, seed=42, svm=True, use_sage='GCN', use_valedges_as_input=False)
+Task number:  1
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.9999159239952917
+Train ACC:  0.9948808324941255
+Train Precision:  0.26506024096385544
+Valid AUC:  0.6184486373165619
+Valid ACC:  0.9937325905292479
+Valid Precision:  0.0
+Test AUC:  0
+Test ACC:  0.9952988582941572
+Test Precision:  0.0
+
+Task number:  2
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.999737876802097
+Train ACC:  0.9927612070469213
+Train Precision:  0.20192307692307693
+Valid AUC:  0.6923570969813745
+Valid ACC:  0.9833226427196922
+Valid Precision:  0.0
+Test AUC:  0.7749070268154238
+Test ACC:  0.9859566998244588
+Test Precision:  0.05
+
+Task number:  3
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.9974266598044261
+Train Precision:  0.4
+Valid AUC:  0.6511945392491468
+Valid ACC:  0.9945504087193461
+Valid Precision:  0.0
+Test AUC:  0.7256605463502015
+Test ACC:  0.9906367041198502
+Test Precision:  0.0
+
+Task number:  4
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.9939316239316239
+Train Precision:  0.24468085106382978
+Valid AUC:  0.657979870596693
+Valid ACC:  0.9878136200716846
+Valid Precision:  0.0
+Test AUC:  0.754535519125683
+Test ACC:  0.9908376963350786
+Test Precision:  0.0
+
+Task number:  5
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.9973427052974456
+Train Precision:  0.3673469387755102
+Valid AUC:  0.9440726577437858
+Valid ACC:  0.993006993006993
+Valid Precision:  0.0
+Test AUC:  0.6865079365079365
+Test ACC:  0.994588093806374
+Test Precision:  0.0
+
+Task number:  6
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.9953420167342362
+Train Precision:  0.31645569620253167
+Valid AUC:  0.6423357664233577
+Valid ACC:  0.9913850231941683
+Valid Precision:  0.0
+Test AUC:  0.49665998663994654
+Test ACC:  0.989993328885924
+Test Precision:  0.0
+
+Task number:  7
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.9997452012909801
+Train ACC:  0.9888126112382405
+Train Precision:  0.1592356687898089
+Valid AUC:  0.47909112883732174
+Valid ACC:  0.9790159189580319
+Valid Precision:  0.0
+Test AUC:  0.41854893908282
+Test ACC:  0.9815447710184553
+Test Precision:  0.0
+
+Task number:  8
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.996415770609319
+Train Precision:  0.3387096774193548
+Valid AUC:  0.750445632798574
+Valid ACC:  0.9953302201467645
+Valid Precision:  0.16666666666666666
+Test AUC:  0.7893124574540504
+Test ACC:  0.9945689069925322
+Test Precision:  0.16666666666666666
+
+Task number:  9
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.9965525732578183
+Train Precision:  0.36363636363636365
+Valid AUC:  0.6174652241112828
+Valid ACC:  0.9938319198149576
+Valid Precision:  0.0
+Test AUC:  0.3234859675036928
+Test ACC:  0.9948377581120944
+Test Precision:  0.0
+
+Task number:  10
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.9981715425531915
+Train Precision:  0.4883720930232558
+Valid AUC:  0.55403695267021
+Valid ACC:  0.9939393939393939
+Valid Precision:  0.0
+Test AUC:  0.49849170437405727
+Test ACC:  0.9939849624060151
+Test Precision:  0.0
+
+Task number:  11
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.9996614473127381
+Train ACC:  0.9912977357215276
+Train Precision:  0.1693548387096774
+Valid AUC:  0.8850036049026676
+Valid ACC:  0.9856011519078474
+Valid Precision:  0.0
+Test AUC:  0.6948630136986301
+Test ACC:  0.9809004092769441
+Test Precision:  0.041666666666666664
+
+Task number:  12
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.9997500416597234
+Train ACC:  0.9931808731808732
+Train Precision:  0.21904761904761905
+Valid AUC:  0.522484756097561
+Valid ACC:  0.9916286149162862
+Valid Precision:  0.0
+Test AUC:  0.7582628747117601
+Test ACC:  0.9877394636015325
+Test Precision:  0.0
+
+Task number:  13
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.9960693839186533
+Train Precision:  0.34285714285714286
+Valid AUC:  0.8242088242088242
+Valid ACC:  0.9910282953761215
+Valid Precision:  0.0
+Test AUC:  0
+Test ACC:  0.9927392739273927
+Test Precision:  0.0
+
+Task number:  14
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.999828825744608
+Train ACC:  0.9916310845431255
+Train Precision:  0.20967741935483872
+Valid AUC:  0.9806076276664512
+Valid ACC:  0.9890251775338929
+Valid Precision:  0.0
+Test AUC:  0.7189655172413794
+Test ACC:  0.9869146005509641
+Test Precision:  0.0
+
+Task number:  15
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  1.0
+Train ACC:  0.993483360848032
+Train Precision:  0.2268041237113402
+Valid AUC:  0.87453125
+Valid ACC:  0.993142144638404
+Valid Precision:  0.0
+Test AUC:  0.7943539630836047
+Test ACC:  0.9908972691807543
+Test Precision:  0.0
+
+Task number:  16
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.9998327339633687
+Train ACC:  0.9957429048414024
+Train Precision:  0.3108108108108108
+Valid AUC:  0.3940520446096654
+Valid ACC:  0.9918458117123795
+Valid Precision:  0.0
+Test AUC:  0.25744975744975745
+Test ACC:  0.9944636678200692
+Test Precision:  0.0
+
+Task number:  17
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.0
+Train ACC:  0.9980592355075522
+Train Precision:  0.4772727272727273
+Valid AUC:  0
+Valid ACC:  0.9963924963924964
+Valid Precision:  0.0
+Test AUC:  0.4298362107127047
+Test ACC:  0.9946984758117959
+Test Precision:  0.0
+
+Averaged Results
+
+-----------------------------
+
+./molecules_config/ogbg-molmuv.json
+weight/s2gaesvm-GCN12000_zinc12k_dm_2_hidd128-0.8-3-256_model.pth
+Backbone Frozen!
+Using SVM
+Pooling used:  add
+Features:  last
+Train AUC:  0.9998968661981082
+Train ACC:  0.9947707130310891
+Train Precision:  0.30007325226833786
+Valid AUC:  0.6889755823348638
+Valid ACC:  0.9908583778575121
+Valid Precision:  0.00980392156862745
+Test AUC:  0.6208575150027817
+Test ACC:  0.9906235847037879
+Test Precision:  0.01519607843137255
+
+Time taken =  362.6443703174591
